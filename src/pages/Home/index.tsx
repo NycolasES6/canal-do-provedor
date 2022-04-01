@@ -21,9 +21,6 @@ const Home: React.FC = () => {
     </WellCome>
 
     <Perfil/>
-    <Perfil/>
-    <Perfil/>
-    <Perfil/>
 
   </Container> ;
 }
