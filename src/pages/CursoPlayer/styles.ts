@@ -2,22 +2,24 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
   padding: 20px 15px;
   padding-bottom: 0;
 `
 
 export const Player = styled.iframe`
-  width: 70vw;
-  height:35vw;
+  width: 90vw;
+  height:45vw;
   border: none;
   border-radius: 15px;
 `
 
 export const Menu = styled.div`
 background-color:#111327;
-height:35vw;
-width: 25vw;
+height:auto;
+width: 75vw;
 border-radius: 15px;
 padding: 20px;
 `

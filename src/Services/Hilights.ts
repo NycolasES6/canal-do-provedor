@@ -1,0 +1,19 @@
+export function loadHilights (){return[
+  {
+    link:"http://localhost:3000/cursos/rede-de-computadores",
+    bg:"/assets/hilight/bg1.png"
+  },
+  {
+    link:"http://localhost:3000/cursos/rede-de-computadores",
+    bg:"/assets/hilight/bg2.png"
+  },
+  {
+    link:"http://localhost:3000/cursos/rede-de-computadores",
+    bg:"/assets/hilight/bg3.png"
+  },
+  {
+    link:"http://localhost:3000/cursos/rede-de-computadores",
+    bg:"/assets/hilight/bg4.png"
+  }
+]
+}

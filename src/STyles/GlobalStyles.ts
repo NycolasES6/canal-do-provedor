@@ -8,14 +8,13 @@ export default createGlobalStyle`
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 
-  html, body{
-    height: 100%;
-  }
-
-  #root{
+  body{
     background-color: var(--dark-blue);
-    height:100%;
-    overflow-y: auto;
+    color: white;
+  }
+  
+  html, body, #root{
+    height: 100%;
   }
 
   :root {

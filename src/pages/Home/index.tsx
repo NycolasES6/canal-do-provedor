@@ -1,27 +1,35 @@
 import React from 'react';
-import Perfil from '../../components/Perfil';
 
-import { Container, WellCome,Wp } from './styles';
+import { Container, Power, Button, GroupText, Ilustration, Text, HighlightsSection, Highlights} from './styles';
 
-interface WellcomeProps{
-  name:string
-}
-const WellcomeMessage: React.FC<WellcomeProps> = ({name}) => {
-  return <Wp>
-    <p className='first'>Olá {name}</p>
-    <p className='second'>É bom vêlo de volta.<br/>Continue aprendendo em nossa área de cursos</p>
-  </Wp>
-  ;
-}
+import HilightText from '../../components/HilightText'
+
+import Highlight from '../../components/Hilight'
+
+import { loadHilights } from '../../Services/Hilights';
+const hilightsData = loadHilights()
 
 const Home: React.FC = () => {
   return <Container>
-    <WellCome>
-      <WellcomeMessage name="Nycolas"></WellcomeMessage>
-    </WellCome>
+    <HighlightsSection>
+        <HilightText size='25pt' text="Destaques"></HilightText>
+        
+        <Highlights>
+          {hilightsData.map((data)=> <Highlight bg={data.bg} link={data.link}></Highlight>)}
+        </Highlights>
+    </HighlightsSection>
 
-    <Perfil/>
+    <hr style={{width:'70%', margin:'25px auto'}} />
 
+    <Power>
+      <GroupText>
+      <Text>
+        Com grandes poderes vem grandes resonsabilidades.
+      </Text>
+        <Ilustration src='assets/ilustrations/programmer.svg'/>
+      </GroupText>
+      <Button href='/cursos'>Cursos</Button>
+    </Power>
   </Container> ;
 }
 

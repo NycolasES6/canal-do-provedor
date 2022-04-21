@@ -1,4 +1,4 @@
-import { Container, Menu, Logo, SettingIcon, Li } from './styles';
+import { Container, Menu, Logo, Li } from './styles';
 
 const Header: React.FC = () => {
   return <Container>
@@ -6,10 +6,8 @@ const Header: React.FC = () => {
     <Menu>
       <Li><a href="/home">Home</a><hr/></Li>
       <Li><a href="/store">Store</a><hr/></Li>
-      <Li><a href="/acoount">Conta</a><hr/></Li>
       <Li><a href="/cursos">Aprenda</a><hr/></Li>
     </Menu>
-    <a href='/settings'><SettingIcon /></a>
     </Container>;
 }
 
